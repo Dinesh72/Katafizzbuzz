@@ -1,4 +1,4 @@
-//stage 2 contains 3 and 5
+//Refactor
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -7,7 +7,7 @@
 
 /**
  *
- * @author pravin
+ * @author Dinesh
  */
 class  fizzbuzz{
 
@@ -25,7 +25,7 @@ class  fizzbuzz{
          else
          return false;
     }
-    public boolean isDivisibleby_3and5(int number)
+    public static boolean isDivisibleby_3and5(int number)
 {
     Boolean status=false;
     Integer checknumber;
@@ -41,7 +41,7 @@ class  fizzbuzz{
     return status;
     
 }
-public boolean isDivisibleby_3(int number)
+public static boolean isDivisibleby_3(int number)
 {
     Boolean status=false;
     Integer checknumber;
@@ -57,7 +57,7 @@ public boolean isDivisibleby_3(int number)
     return status;
     
 }
-public boolean isDivisibleby_5(int number)
+public static boolean isDivisibleby_5(int number)
 {
     Boolean status=false;
     Integer checknumber;
