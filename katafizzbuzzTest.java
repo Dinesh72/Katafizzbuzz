@@ -1,4 +1,4 @@
-//containing both divisibility 3 and 5
+//stage 2 contains 3 and 5
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -24,10 +24,26 @@ public class katafizzbuzzTest {
     @Test
      public void fizzbuzztest() {
      fizzbuzz test1=new fizzbuzz();
-     String checknumber=null;
-     String Status;
+     
+     
      for(int i=1;i<=100;i++)
      {
+         
+         try{
+        Assert.assertTrue(test1.contains_3(i));
+        System.out.println("Fizz contains 3");
+         }
+         catch(AssertionError e4)
+         {
+            try{
+        Assert.assertTrue(test1.contains_5(i));
+        System.out.println("Buzz contains 5");
+         }
+         catch(AssertionError e5)
+         {
+             
+          
+         }
          
          try{
         Assert.assertTrue(test1.isDivisibleby_3and5(i));
@@ -45,9 +61,9 @@ public class katafizzbuzzTest {
              try{
                
         Assert.assertTrue(test1.isDivisibleby_5(i));
-        System.out.println("Fizz");
+        System.out.println("Buzz.");
          }
-         catch(AssertionError e2)
+         catch(AssertionError e3)
          {
              System.out.println(i);
          }
@@ -55,9 +71,10 @@ public class katafizzbuzzTest {
          }
          
          
-         
+         }
          
      }
 
     }
 }
+
