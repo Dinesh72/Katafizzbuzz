@@ -1,4 +1,4 @@
-///3 and 5
+//stage 2 contains 3 and 5
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +11,20 @@
  */
 class  fizzbuzz{
 
-  
+    public static boolean contains_3(int number)
+    {
+     if(number%10==3)
+         return true;
+         else
+         return false;
+    }
+    public static boolean contains_5(int number)
+    {
+     if(number%10==5)
+         return true;
+         else
+         return false;
+    }
     public boolean isDivisibleby_3and5(int number)
 {
     Boolean status=false;
