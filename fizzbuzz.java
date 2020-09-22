@@ -1,4 +1,5 @@
-//divisible by 3 
+
+////divisible 5 
 class  fizzbuzz{
 
 public boolean isDivisibleby_3(int number)
@@ -13,7 +14,23 @@ public boolean isDivisibleby_3(int number)
    {
        status=false;
    }
-    System.out.println("Number "+i)
+    
+    return status;
+    
+}
+public boolean isDivisibleby_5(int number)
+{
+    Boolean status=false;
+    Integer checknumber;
+   if(number%5==0)
+   {
+       status=true;
+   }
+   else
+   {
+       status=false;
+   }
+    
     return status;
     
 }
